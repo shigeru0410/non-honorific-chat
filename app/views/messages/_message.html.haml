@@ -1,11 +1,27 @@
 .middle-items{data: {message: {id: message.id}}}
-  .middle-items__info
-    .middle-items__info__name
-      = message.user.name
-    .middle-items__info__date
-      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
-  .middle-items__message
-    - if message.content.present?
-      %p.middle-items__message__text
-        = safe_join(message.content.split("\n"),tag(:br)) 
-    = image_tag message.image.url, class: 'middle-items__message__image' if message.image.present?
+  - if current_user.id == message.user.id
+    .middle-items__right
+      .middle-items__info
+        .middle-items__info__name
+          = message.user.name
+        .middle-items__info__date
+          = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+      .middle-items__message
+        - if message.content.present?
+          .middle-items__message__right
+            %p.middle-items__message__text
+              = safe_join(message.content.split("\n"),tag(:br)) 
+        = image_tag message.image.url, class: 'middle-items__message__image' if message.image.present?
+  - else
+    .middle-items__left
+      .middle-items__info
+        .middle-items__info__name
+          = message.user.name
+        .middle-items__info__date
+          = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+      .middle-items__message
+        - if message.content.present?
+          .middle-items__message__left
+            %p.middle-items__message__text
+              = safe_join(message.content.split("\n"),tag(:br)) 
+        = image_tag message.image.url, class: 'middle-items__message__image' if message.image.present?

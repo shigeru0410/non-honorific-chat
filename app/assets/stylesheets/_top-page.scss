@@ -103,6 +103,16 @@
     overflow: scroll;
     .middle-items {
       margin-bottom: 46px;
+      &__left,
+      &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      &__right {
+        align-items: flex-end;
+      }
       &__info {
         margin-bottom: 12px;
         display: flex;
@@ -117,8 +127,33 @@
         }
       }
       &__message {
+        max-width: 500px; /*最大幅は任意*/
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 5px 13px 5px 18px;
+        border-radius: 12px;
+        background: #99dddd; /*色は任意*/
+        box-sizing: border-box;
+        margin: 0 !important;
+        line-height: 1.5;
+        /*   align-items: center; */
         font-size: 14px;
         color: #434a54;
+        &:after {
+          content: "";
+          position: absolute;
+          border: 10px solid transparent;
+          /*   margin-top:-3px;  */
+        }
+      }
+      &__left :after {
+        left: -26px;
+        border-right: 22px solid #99dddd;
+      }
+      &__right :after {
+        right: -26px;
+        border-left: 22px solid #99dddd;
       }
     }
   }
