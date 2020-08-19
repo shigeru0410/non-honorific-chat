@@ -93,6 +93,7 @@
       margin-top: 28px;
       padding: 0px 20px;
       text-decoration: none;
+      border-radius: 10px;
     }
   }
   &__message-list {
@@ -130,12 +131,14 @@
       &__new-message {
         width: 100%;
         position: relative;
+        border-radius: 10px;
         &__text {
           height: 50px;
           width: 100%;
           font-size: 16px;
           padding: 0px 45px 0px 10px;
           border: none;
+          border-radius: 10px;
         }
         &__image {
           height: 50px;
@@ -158,6 +161,7 @@
         padding: 0px 20px;
         margin-left: 15px;
         border: none;
+        border-radius: 10px;
       }
     }
   }
