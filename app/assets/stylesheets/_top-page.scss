@@ -133,18 +133,16 @@
         position: relative;
         padding: 5px 13px 5px 18px;
         border-radius: 12px;
-        background: #99dddd; /*色は任意*/
+        background: #99dddd;
         box-sizing: border-box;
         margin: 0 !important;
         line-height: 1.5;
-        /*   align-items: center; */
         font-size: 14px;
         color: #434a54;
         &:after {
           content: "";
           position: absolute;
           border: 10px solid transparent;
-          /*   margin-top:-3px;  */
         }
       }
       &__left :after {
