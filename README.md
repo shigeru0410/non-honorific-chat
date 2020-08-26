@@ -24,7 +24,11 @@ PC を普段から使わない人がメール報告するとタイプに時間�
 
 ## 使用技術(開発環境)
 
+Ruby/Ruby on Rails/MySQL/JavaScript/Github/heroku/Visual Studio Code
+
 ## 課題や今後実装したい機能
+
+簡単なメッセージを設定しおいて、ボタンを押したら決められたメッセージを送信できるようにする
 
 ## DB 設計
 
