@@ -64,7 +64,7 @@ $(function () {
         $(".bottom-items__submitbtn").prop("disabled", false);
       })
       .fail(function () {
-        alert("メッセージ送信に失敗しました");
+        alert("メッセージ送信失敗");
         $(".bottom-items__submitbtn").prop("disabled", false);
       });
   });
