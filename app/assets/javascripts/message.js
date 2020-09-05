@@ -13,7 +13,7 @@ $(function () {
           </div>
           <div class="middle-items__message">
             <p class="middle-items__message__text">
-              ${message.content}
+              ${safe_join(message.content)}
             </p>
             <img class="middle-items__message__image" src="${message.image}">
           </div>
@@ -33,7 +33,7 @@ $(function () {
           </div>
           <div class="middle-items__message">
             <p class="middle-items__message__text">
-              ${message.content}
+              ${safe_join(message.content)}
             </p>
           </div>
         </div>
