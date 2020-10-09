@@ -9,7 +9,8 @@
 
 .side-bar {
   width: 300px;
-  background-color: #253141;
+  background: #2d3288;
+  border-right: 1px solid #eeeeee;
   &__user-name {
     height: 100px;
     padding: 0px 20px;
@@ -39,7 +40,7 @@
   }
   &__group-list {
     height: calc(100vh - 100px);
-    background-color: #2f3e51;
+    background: $white;
     padding: 0px 20px;
     overflow: scroll;
     &__box {
@@ -49,11 +50,11 @@
       &__group-name {
         font-size: 15px;
         margin-bottom: 5px;
-        color: $white;
+        color: #333333;
       }
       &__group-message {
         font-size: 11px;
-        color: $white;
+        color: #333333;
       }
     }
   }
@@ -61,7 +62,7 @@
 
 .chat-main {
   width: calc(100vw - 300px);
-  background-color: $white;
+  background-color: #262a7e;
   &__group-info {
     height: 100px;
     border-bottom: 1px solid #eeeeee;
@@ -70,7 +71,7 @@
     &__group {
       &__name {
         font-size: 20px;
-        color: #333333;
+        color: $white;
         margin-top: 35px;
       }
       &__list {
@@ -87,8 +88,8 @@
       height: 40px;
       width: 72px;
       line-height: 40px;
-      border: 1px solid $blue;
-      color: $blue;
+      border: 1px solid $white;
+      color: $white;
       font-size: 16px;
       margin-top: 28px;
       padding: 0px 20px;
@@ -98,7 +99,7 @@
   }
   &__message-list {
     height: calc(100vh - 100px - 90px);
-    background-color: #fafafa;
+    background-color: #a8a5ec;
     padding: 35px 40px 0px;
     overflow: scroll;
     .middle-items {
@@ -122,7 +123,7 @@
         }
         &__date {
           font-size: 12px;
-          color: #999999;
+          color: #191d1a;
           margin-left: 10px;
         }
       }
@@ -133,7 +134,7 @@
         position: relative;
         padding: 5px 13px 5px 18px;
         border-radius: 12px;
-        background: #99dddd;
+        background: #6ada54;
         box-sizing: border-box;
         margin: 0 !important;
         line-height: 1.5;
@@ -150,11 +151,11 @@
       }
       &__left :after {
         left: -26px;
-        border-right: 22px solid #99dddd;
+        border-right: 22px solid #6ada54;
       }
       &__right :after {
         right: -26px;
-        border-left: 22px solid #99dddd;
+        border-left: 22px solid #6ada54;
       }
     }
   }
