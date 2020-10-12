@@ -21,8 +21,8 @@ https://non-honorific-chat.herokuapp.com/
 
 ## DEMO
 
-https://gyazo.com/866fec25e2354898222779b039a4a2b1
-https://gyazo.com/238f89764fd8f26f2d46f8d164b954b9
+https://gyazo.com/dca31815158b8d8b4b3284f4320be173
+https://gyazo.com/b5aecc14a4e13fc9208e810b74c2be49
 
 ## 工夫したポイント
 
