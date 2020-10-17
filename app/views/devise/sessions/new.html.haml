@@ -1,8 +1,8 @@
-.AccountPage
-  .AccountPage__title
-    %h2 Log in
-    = render "devise/shared/links"
-  .AccountPage__form
+.body
+  .logo
+    %h1 Log in
+    
+  .form
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .FormField
         .FormField__label--normal
@@ -17,3 +17,5 @@
             = f.password_field :password, autocomplete: "off"
         .actions
           = f.submit "Log in", class: 'Button UserButton'
+
+= render "devise/shared/links"
