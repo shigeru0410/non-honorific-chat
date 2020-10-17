@@ -1,11 +1,19 @@
-.login
-  %h1 Login
-  %form.form{action: "#", method: "post"}
-    %p.field
-      %input{name: "login", placeholder: "Username", required: "", type: "text"}
-      %i.fa.fa-user
-    %p.field
-      %input{name:"password", placeholder: "Password", required: "", type: "password"}
-      %i.fa.fa-lock
-    %p.submit
-      %input{name:"sent", type: "submit", value: "Login"}
+.AccountPage
+  .AccountPage__title
+    %h2 Log in
+    = render "devise/shared/links"
+  .AccountPage__form
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .FormField
+        .FormField__label--normal
+          = f.label :email
+        .FormField__input--normal
+          = f.email_field :email, autofocus: true
+        .FormField
+          .FormField__label--normal
+            = f.label :password
+            %i (英数字8文字以上)
+          .FormField__input--normal
+            = f.password_field :password, autocomplete: "off"
+        .actions
+          = f.submit "Log in", class: 'Button UserButton'
