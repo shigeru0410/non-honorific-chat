@@ -3,10 +3,10 @@
     %h1 Log in
   .form
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-      .FormField
-        .FormField__label--normal
+      .field_all
+        .field
           = f.label :email
-        .FormField__input--normal
+        .field
           = f.email_field :email, autofocus: true
         .FormField
           .FormField__label--normal
