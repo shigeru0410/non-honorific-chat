@@ -13,8 +13,6 @@ body {
   font: $loginfonts;
   color: $fontscolor;
   background: $loginbg;
-  display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -38,13 +36,17 @@ body {
 
 .form {
   width: 100%;
-
+  margin: 0px auto 0px auto;
   .field {
     position: relative;
-    margin: 0 50px;
-
+    &__label {
+      padding: 10px 0;
+      letter-spacing: 1px;
+      font-size: 14px;
+      font-weight: 200;
+    }
     i {
-      font-size: 13px;
+      font-size: 18px;
       left: 0px;
       top: 0px;
       position: absolute;
