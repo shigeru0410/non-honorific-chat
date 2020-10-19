@@ -8,13 +8,13 @@
           = f.label :email
         .field__input
           = f.email_field :email, autofocus: true
-        .field
-          .field__label
-            = f.label :password
-            %i (英数字8文字以上)
-          .field__input
-            = f.password_field :password, autocomplete: "off"
-        .actions
-          = f.submit "Log in", class: 'Button UserButton'
+      .field
+        .field__label
+          = f.label :password
+          %i (英数字8文字以上)
+        .field__input
+          = f.password_field :password, autocomplete: "off"
+      .actions
+        = f.submit "Log in", class: 'Button UserButton'
 
 = render "devise/shared/links"

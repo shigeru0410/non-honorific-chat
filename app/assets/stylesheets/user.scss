@@ -37,7 +37,12 @@ body {
       font-weight: 200;
     }
     &__input {
-      // width: 370px;
+      input {
+        box-sizing: border-box;
+        width: 270px;
+        padding: 10px;
+        letter-spacing: 1px;
+      }
     }
     // i {
     //   font-size: 18px;
