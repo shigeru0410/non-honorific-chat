@@ -2,24 +2,23 @@
 
 body {
   color: $fontscolor;
-  background: $loginbg;
+  background: $white;
   text-align: center;
 }
 
 .logo {
   // background-position: center;
   height: 60px;
-  width: 140px;
-  margin: 0px auto 30px auto;
+  width: 50%;
+  margin: 30px auto;
   h1 {
     line-height: 55px;
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
-    color: #fff;
+    color: $imagecolor;
     text-align: center;
-    background: $headerbg;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
   }
