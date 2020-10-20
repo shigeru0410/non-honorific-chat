@@ -1,20 +1,19 @@
-.body
-  .logo
+.account__body
+  .account__logo
     %h1 Log in
-  .form
+  .account__form
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-      .field
-        .field__label
+      .account__field
+        .account__field__label
           = f.label :email
-        .field__input
+        .account__field__input
           = f.email_field :email, autofocus: true
-      .field
-        .field__label
+      .account__field
+        .account__field__label
           = f.label :password
           %i (英数字8文字以上)
-        .field__input
+        .account__field__input
           = f.password_field :password, autocomplete: "off"
       .actions
-        = f.submit "Log in", class: 'Button UserButton'
-
-= render "devise/shared/links"
+        = f.submit "Log in", class: 'ButtonUserButton'
+    = render "devise/shared/links"
