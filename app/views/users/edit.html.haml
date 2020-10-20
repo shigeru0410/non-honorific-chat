@@ -1,8 +1,6 @@
 .account__body
   .account__logo
     %h1 Edit Account
-    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
-    = link_to "トップページに戻る", :back, class: 'Button'
   .account__form
     = form_for(current_user) do |f|
       .account__field
@@ -16,3 +14,5 @@
         .account__field__input
           = f.email_field :email
       = f.submit "Update", class: 'ButtonUserButton'
+    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
+    = link_to "トップページに戻る", :back, class: 'Button'
