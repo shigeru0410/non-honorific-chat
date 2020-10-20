@@ -1,12 +1,12 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700)";
 
-body {
+.account__body {
   color: $fontscolor;
   background: $white;
   text-align: center;
 }
 
-.logo {
+.account__logo {
   // background-position: center;
   height: 60px;
   width: 50%;
@@ -24,10 +24,10 @@ body {
   }
 }
 
-.form {
+.account__form {
   width: 100%;
   margin: 0px auto 0px auto;
-  .field {
+  .account__field {
     position: relative;
     &__label {
       padding: 10px 0;
@@ -44,20 +44,6 @@ body {
         letter-spacing: 1px;
       }
     }
-    // i {
-    //   font-size: 18px;
-    //   left: 0px;
-    //   top: 0px;
-    //   position: absolute;
-    //   height: 44px;
-    //   width: 44px;
-    //   color: #f7f3eb;
-    //   background: #676056;
-    //   text-align: center;
-    //   line-height: 44px;
-    //   transition: all 0.3s ease-out;
-    //   pointer-events: none;
-    // }
   }
 }
 
@@ -141,22 +127,6 @@ body {
   font-family: "Open Sans";
 }
 
-.form input[type="text"],
-input[type="password"] {
-  font-family: "Open Sans", Calibri, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  padding: 10px 15px 10px 55px;
-  position: relative;
-  width: 200px;
-  height: 24px;
-  color: #676056;
-  border: none;
-  background: #f7f3eb;
-  color: #777;
-  transition: color 0.3s ease-out;
-}
-
 .form input[type="text"] {
   margin-bottom: 15px;
 }
@@ -177,8 +147,9 @@ input[type="password"] {
   outline: none;
 }
 
-.form input[type="submit"] {
-  margin-top: 15px;
+.ButtonUserButton,
+.Button__signin {
+  margin-top: 40px;
   width: 270px;
   text-align: center;
   font-size: 14px;
@@ -187,9 +158,8 @@ input[type="password"] {
   padding: 12px 0;
   letter-spacing: 0;
   box-shadow: inset 0px 0px 0px 0px $buttonhover;
-
   color: #fff;
-  background-color: $buttoncolor;
+  background-color: #ccc;
   text-shadow: none;
   text-transform: uppercase;
   border: none;
@@ -203,12 +173,10 @@ input[type="password"] {
 .form input[type="submit"]:hover,
 input[type="submit"]:focus {
   color: #fff;
-  box-shadow: inset 0px 46px 0px 0px $buttonhover;
+  box-shadow: inset 0px 46px 0px 0px $blue;
   -webkit-ani: shadowFade 0.4s;
   -moz-ani: shadowFade 0.4s;
 }
-
-/*keyframes for input animation*/
 
 @keyframes shadowFade {
   0% {
@@ -295,8 +263,9 @@ input[type="submit"]:focus {
   }
 }
 
-.Button {
-  margin-top: 40px;
+.Button__signin {
+  margin-top: 60px;
+  width: 150px;
   color: #fff;
   background-color: #ccc;
   font-family: "Open Sans", sans-serif;
