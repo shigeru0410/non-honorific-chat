@@ -147,9 +147,8 @@
   outline: none;
 }
 
-.ButtonUserButton,
-.Button__signin {
-  margin-top: 40px;
+.ButtonUserButton {
+  margin: 40px 0px 80px 0px;
   width: 270px;
   text-align: center;
   font-size: 14px;
@@ -165,7 +164,6 @@
   border: none;
   cursor: pointer;
   position: relative;
-  margin-bottom: 20px;
   -webkit-ani: shadowFadeOut 0.4s;
   -moz-ani: shadowFadeOut 0.4s;
 }
@@ -264,10 +262,9 @@ input[type="submit"]:focus {
 }
 
 .Button__signin {
-  margin-top: 60px;
+  margin-top: 80px;
   width: 150px;
-  color: #fff;
-  background-color: #ccc;
+  color: $blue;
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
 }
