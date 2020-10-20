@@ -1,19 +1,18 @@
-.AccountPage
-  .AccountPage__title
-    %h2 Edit Account
-    %h5 アカウントの編集
+.account__body
+  .account__logo
+    %h1 Edit Account
     = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
     = link_to "トップページに戻る", :back, class: 'Button'
-  .AccountPage__form
+  .account__form
     = form_for(current_user) do |f|
-      .FormField
-        .FormField__label--normal
+      .account__field
+        .account__field__label
           = f.label :name
-        .FormField__input--normal
+        .account__field__input
           = f.text_field :name, autofocus: true
-      .FormField
-        .FormField__label--normal
+      .account__field
+        .account__field__label
           = f.label :email
-        .FormField__input--normal
+        .account__field__input
           = f.email_field :email
-      = f.submit "Update", class: 'Button UserButton'
+      = f.submit "Update", class: 'ButtonUserButton'
